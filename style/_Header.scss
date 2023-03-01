@@ -18,27 +18,21 @@ header {
 }
 
 .nav {
-    height: 36px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 36px/2);
+
     justify-content: center;
     font-family: 'Baloo';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    /* identical to box height, or 150% */
-    
     letter-spacing: -0.25px;
-    
     color: #FFFFFF;
     
    
     .nav-list{
         display: flex;
-    width: 300px;
-    justify-content: space-evenly;
+        width: 300px;
+        justify-content: space-evenly;
         font-family: 'Baloo';
         justify-content: space-evenly;
         align-items: center;
