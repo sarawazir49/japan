@@ -8,9 +8,6 @@ header {
   height: 10vh;
   margin: 0;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .header-logo {
@@ -99,16 +96,14 @@ h3 {
 }
 
 body {
-  width: 100%;
-  font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main {
@@ -213,9 +208,6 @@ body {
   }
   img {
     width: 80%;
-    max-width: 400px;
-    margin-top: 50px;
-    padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -234,13 +226,26 @@ body {
 }
 @media screen and (max-width: 470px) {
   header {
-    padding: 1px;
-    margin: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   li {
     float: left;
     list-style-type: none;
     font-size: 5px;
+  }
+  .header-logo {
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: "Baloo";
   }
   .nav {
     display: -webkit-box;
@@ -254,6 +259,29 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  img {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .h1 {
     text-align: center;
     font-size: 40px;
@@ -261,5 +289,21 @@ body {
   .h3 {
     text-align: center;
     font-size: 15px;
+  }
+  body {
+    margin: 50px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
   }
 }

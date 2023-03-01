@@ -31,13 +31,10 @@ h2{
 
 body{
     
-        width: 100%;
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        flex-direction: column;
+     display: flex;
         background-color: black;
-
-   
+        flex-wrap: wrap;
+        justify-content: space-around;
 }
 .main{
     justify-content: center;
@@ -102,9 +99,6 @@ body{
 
     img{
         width: 80%;
-        max-width: 400px;
-        margin-top: 50px;
-        padding-top: 50px;
         display: flex;
         align-items: center;
     }
@@ -121,8 +115,9 @@ body{
 
 @media screen and (max-width: 470px){ 
     header{
-        padding: 1px;
-        margin: 1px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     
     li{
@@ -130,12 +125,29 @@ body{
         list-style-type: none;
         font-size: 5px;
     }
+    .header-logo {
+        margin-left: 30px;
+        font-size: 40px;
+        font-family: 'Baloo';
+    
+    }
     .nav{
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+    .nav-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;        
+        flex-wrap: wrap
+    }
     
+    img{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
     .h1{
         text-align: center;
         font-size: 40px;
@@ -146,4 +158,13 @@ body{
        text-align: center;
        font-size: 15px
        }
+       body{
+        margin: 50px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-between
+    }
+   
 }
